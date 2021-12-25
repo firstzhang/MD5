@@ -42,6 +42,8 @@ typedef struct
         a += b;                   \
     }
 
-void MD5_CreateMD5(unsigned char *pSource, unsigned char len, unsigned char *pMD5);
+extern void MD5Init(MD5_CTX *context);
+extern void MD5Update(MD5_CTX *context, unsigned char *input, unsigned int inputlen);
+extern void MD5Final(MD5_CTX *context, unsigned char digest[16]);
 
 #endif  // MD5_H

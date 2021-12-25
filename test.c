@@ -10,7 +10,11 @@ int main(int argc, char *argv[])
     unsigned char source[] = { "gongzhonghao:embedded-system" };
     unsigned char md5[16];
 
-    MD5_CreateMD5(source, strlen(source), md5);
+    MD5_CTX md5Handle;
+
+    MD5Init(&md5Handle);
+    MD5Update(&md5Handle, source, strlen(source));
+    MD5Final(&md5Handle, md5);
 
     printf("MD5:");
     for (i = 0; i < 16; i++)
