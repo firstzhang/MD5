@@ -1,0 +1,23 @@
+# C
+
+# must commit
+!*.c
+!*.h
+
+*.o
+*.d
+*.exe
+*.crf
+*.uvmpw*
+*.uvguix*
+
+# generated files
+Listings/
+Obj/
+out/
+demo/
+Projects/X9_front/
+Bootloader/User/
+RTE/
+
+#ignore file name
