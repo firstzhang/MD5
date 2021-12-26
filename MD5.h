@@ -42,6 +42,6 @@ typedef struct
         a += b;                   \
     }
 
-void MD5_CreateMD5(unsigned char *pSource, unsigned char len, unsigned char *pMD5);
+// void MD5_CreateMD5(unsigned char *pSource, unsigned char len, unsigned char *pMD5);
 
 #endif  // MD5_H
