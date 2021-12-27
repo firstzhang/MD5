@@ -1,6 +1,8 @@
 #ifndef MD5_H
 #define MD5_H
 
+#include <string.h>
+
 typedef struct
 {
     unsigned int  count[2];
